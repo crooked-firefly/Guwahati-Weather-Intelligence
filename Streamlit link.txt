@@ -7,7 +7,7 @@ Password:- admin2001
 
 
 Command to push new data into GitHub:-
-cd "C:\Users\Acer\Downloads\Guwahati_Daily_weather\Guwahati-Weather-Intelligence"
+
 git add data/processed_data.csv
 git commit -m "Updated data - February 2026"
 git push origin main

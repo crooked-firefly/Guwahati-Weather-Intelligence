@@ -5,8 +5,8 @@ def check_password():
 
     def password_entered():
         """Validates the entered username and password."""
-        entered_user = st.session_state.get("username 'admin'", "")
-        entered_password = st.session_state.get("password 'admin2001'", "")
+        entered_user = st.session_state.get("username", "")
+        entered_password = st.session_state.get("password", "")
 
         if entered_user == "admin" and entered_password == "admin2001":
             st.session_state["password_correct"] = True
@@ -24,8 +24,8 @@ def check_password():
             </div>
         """, unsafe_allow_html=True)
 
-        st.text_input("👤 Username", key="username")
-        st.text_input("🔒 Password", type="password", on_change=password_entered, key="password")
+        st.text_input("👤 Username 'admin'", key="username")
+        st.text_input("🔒 Password 'admin2001'", type="password", on_change=password_entered, key="password")
 
         if "password_correct" in st.session_state and not st.session_state["password_correct"]:
             st.error("😕 User not known or password incorrect")

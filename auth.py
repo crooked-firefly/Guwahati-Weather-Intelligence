@@ -5,8 +5,8 @@ def check_password():
 
     def password_entered():
         """Validates the entered username and password."""
-        entered_user = st.session_state.get("username", "")
-        entered_password = st.session_state.get("password", "")
+        entered_user = st.session_state.get("username 'admin'", "")
+        entered_password = st.session_state.get("password 'admin2001'", "")
 
         if entered_user == "admin" and entered_password == "admin2001":
             st.session_state["password_correct"] = True
